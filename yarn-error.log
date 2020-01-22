@@ -1,0 +1,35 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add bulma
+
+PATH: 
+  D:\app\oracle\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Python;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\菊地　佐紀子\AppData\Local\Microsoft\WindowsApps;C:\Users\菊地　佐紀子\AppData\Local\Microsoft\WindowsApps;C:\Users\菊地　佐紀子\AppData\Roaming\npm;C:\Users\菊地　佐紀子\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\菊地　佐紀子\AppData\Local\Yarn\bin;C:\Users\菊地　佐紀子\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect EHOSTUNREACH 104.16.25.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14)
+
+npm manifest: 
+  {
+    "name": "wp-theme",
+    "version": "0.1.0",
+    "description": "WordPress用オリジナルテーマ",
+    "main": "index.php",
+    "author": "sake <sakelog.website@gmail.com>",
+    "license": "MIT",
+    "private": null
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

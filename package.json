@@ -1,0 +1,20 @@
+{
+  "name": "wp-theme",
+  "version": "0.1.0",
+  "description": "WordPress用オリジナルテーマ",
+  "main": "index.php",
+  "author": "sake <sakelog.website@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "scss": "node-sass ./styles/mystyle.scss ./styles/mystyle.css -w",
+    "mincss": "cleancss -o ./styles/mystyles.min.css ./styles/mystyle.css"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1"
+  }
+}
