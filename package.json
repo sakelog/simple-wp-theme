@@ -11,7 +11,8 @@
     "mincss": "cleancss -o ./styles/mystyle.min.css ./styles/mystyle.css"
   },
   "dependencies": {
-    "bulma": "^0.8.0"
+    "bulma": "^0.8.0",
+    "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "clean-css-cli": "^4.3.0",
