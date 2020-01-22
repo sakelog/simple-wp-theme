@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "scss": "node-sass ./styles/mystyle.scss ./styles/mystyle.css -w",
-    "mincss": "cleancss -o ./styles/mystyles.min.css ./styles/mystyle.css"
+    "mincss": "cleancss -o ./styles/mystyle.min.css ./styles/mystyle.css"
   },
   "dependencies": {
     "bulma": "^0.8.0"
