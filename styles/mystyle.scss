@@ -1,3 +1,6 @@
-@import "../node_modules/bulma/bulma.sass"
-//@import "../node_modules/skeleton-css/css/normalize.css";
-//@import "../node_modules/skeleton-css/css/skeleton.css";
+@import "../node_modules/bulma/bulma.sass";
+@import "./mypagination.scss";
+
+h2 {
+  font-size: 1.2rem;
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-  $page_title = "";
+  $page_title = '';
   if ( is_front_page() ){
     $page_title = get_bloginfo('name');
   }
@@ -9,7 +9,7 @@
   }
   echo '<h1 class="title">'. $page_title . '</h1>';
 
-  $postTag = "";
+  $postTag = '';
   if ( have_posts() ) {
     while (have_posts() ){
       the_post();
@@ -35,7 +35,24 @@
 
       echo $postTag;
     }
-    echo paginate_links();
+
+    $paginationTag = '';
+
+    $paginate_settings = array(
+      'show_all'           => False,
+      'end_size'           => 1,
+      'mid_size'           => 2,
+      'prev_next'          => True,
+      'prev_text'          => '前へ',
+      'next_text'          => '次へ',
+      'type'               => 'list',
+    );
+
+    $paginationTag = '<nav class="pagination">';
+    $paginationTag .= paginate_links($paginate_settings);
+    $paginationTag .= '</nav>';
+
+    echo $paginationTag;
   }
 ?>
 <?php get_footer(); ?>
