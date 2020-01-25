@@ -1,9 +1,10 @@
 <?php
+/*-----------------------------------------------------------------------------
+  WordPress機能
+  -----------------------------------------------------------------------------*/
 if (! function_exists('my_setup') ) {
   function my_setup() {
     add_theme_support('title-tag');
-
-    add_theme_support( 'post-thumbnails' );
 	
     add_theme_support( 'html5', array(
       'search-form',
@@ -17,12 +18,43 @@ if (! function_exists('my_setup') ) {
   }
   add_action('after_setup_theme', 'my_setup');
 }
-
-if ( ! function_exists('set_excerpt_length') ) {
-  function set_excerpt_length( $length ) {
-    return 160;
+if (!function_exists('disable_meta')) {
+  function disable_meta() {
+  remove_action('wp_head', 'wp_generator'); 
+  remove_action('wp_head', 'wlwmanifest_link'); 
+  remove_action('wp_head', 'rsd_link');
   }
-  add_filter('excerpt_length', 'set_excerpt_length', 999);
+  add_action ('init', 'disable_meta');
+}
+if (!function_exists('disable_emojis')) {
+  function disable_emojis() {
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+    remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );
+    remove_action( 'admin_print_styles', 'print_emoji_styles' );     
+    remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+    remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );  
+    remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  }
+  add_action( 'init', 'disable_emojis' );
+}
+if (!function_exists('remove_block_library_style')) {
+  function remove_block_library_style() {
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+  }
+  add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );
+}
+/*-----------------------------------------------------------------------------
+  Menu登録
+  -----------------------------------------------------------------------------*/
+if ( !function_exists('my_register_menu') ) {
+  function my_register_menu() {
+    register_nav_menus(array(
+      'global' => 'グローバルナビ',
+    ));
+  }
+  add_action('after_setup_theme', 'my_register_menu');
 }
 /*-----------------------------------------------------------------------------
   CSS登録
