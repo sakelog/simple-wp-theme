@@ -7115,6 +7115,13 @@ label.panel-block {
 h2 {
   font-size: 1.2rem; }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  .wrapper footer {
+    margin-top: auto; }
+
 .pagination {
   display: flex;
   justify-content: center; }
@@ -7179,18 +7186,20 @@ h2 {
     flex-wrap: wrap; }
 
 #to_page_top {
-  width: 50px;
-  height: 50px;
+  width: 4rem;
+  height: 4rem;
   position: fixed;
   right: 1rem;
   bottom: 1rem;
   background: #d3381c;
   opacity: 0.6; }
-  #to_page_top a {
+  #to_page_top button {
     position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    background: transparent;
+    border: none; }

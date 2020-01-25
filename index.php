@@ -4,10 +4,20 @@
   if ( is_front_page() ){
     $page_title = get_bloginfo('name');
   }
-  elseif ( is_archive() ){ 
+  else { 
     $page_title = get_the_archive_title();
   }
   echo '<h1 class="title">'. $page_title . '</h1>';
+  
+  if(is_search()) {
+    $hit_num = $wp_query->found_posts;
+    if ( $hit_num > 0 ) {
+      $hit_num_str = '';
+      $hit_num_str = '該当件数：' . $hit_num . '件' ;
+      $search_tag = '<div><p>'. $hit_num_str . '</p></div>';
+      echo $search_tag;
+    }
+  }
 
   $postTag = '';
   if ( have_posts() ) {
@@ -21,8 +31,6 @@
       $post_cat = get_the_category()[0];
       $category_name = get_category($post_cat) -> cat_name;
       $category_link = get_category_link($post_cat);
-
-      //$category_tag = get_category_tag($post_category);
 
       $postTag = '<div class="columns">';
       $postTag .= '<div class="column">';

@@ -10,7 +10,9 @@
     "scss": "node-sass ./styles/mystyle.scss ./styles/mystyle.css -w",
     "mincss": "cleancss -o ./styles/mystyle.min.css ./styles/mystyle.css",
     "navMenuC": "tsc scripts/src/ts/navmenu.ts --outDir scripts/src/js",
-    "navMenuM": "uglifyjs scripts/src/js/navmenu.js -c -o scripts/dist/navmenu.min.js"
+    "navMenuM": "uglifyjs scripts/src/js/navmenu.js -c -o scripts/dist/navmenu.min.js",
+    "toTopPageC": "tsc scripts/src/ts/to_toppage.ts --outDir scripts/src/js",
+    "toTopPageM": "uglifyjs scripts/src/js/to_toppage.js -c -o scripts/dist/to_toppage.min.js"
   },
   "dependencies": {
     "bulma": "^0.8.0",

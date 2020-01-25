@@ -1,1 +1,1 @@
-<div id="to_page_top"><a href="#">PAGE TOP</a></div>
+<div id="to_page_top"><button>PAGE TOP</button></div>
