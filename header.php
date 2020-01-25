@@ -4,6 +4,8 @@
   </head>
   <body>
     <header>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
       <nav class="navbar is-primary">
         <div class="navbar-brand">
           <a class="navbar-item">
