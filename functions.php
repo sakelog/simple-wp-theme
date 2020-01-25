@@ -38,7 +38,11 @@ if ( ! function_exists('my_register_style') ){
   -----------------------------------------------------------------------------*/
 if (! function_exists('my_register_scripts')){
   function my_register_scripts() {
-    
+    //navMenu
+    wp_enqueue_script('navMenu', 
+    get_template_directory_uri() . '/scripts/dist/navmenu.min.js', 
+    array(), false, true);
+
     //jQuery
     if (! is_admin()) {
       wp_deregister_script( 'jquery' );

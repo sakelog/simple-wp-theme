@@ -11,8 +11,14 @@
           <a class="navbar-item">
           <?php echo get_bloginfo('name'); ?>
           </a>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        <div class="navbar-menu">
+
+        <div class="navbar-menu" id="navMenu">
           <div class="navbar-start">
             <a class="navbar-item">
               test
