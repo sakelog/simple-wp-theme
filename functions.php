@@ -62,6 +62,7 @@ if ( !function_exists('my_register_menu') ) {
 if ( ! function_exists('my_register_style') ){
   function my_register_style() {
     wp_enqueue_style('my-style', get_template_directory_uri() . '/styles/mystyle.min.css', array());
+    //wp_enqueue_style('my-style', get_template_directory_uri() . '/styles/mystyle.css', array());
   }
   add_action('wp_enqueue_scripts', 'my_register_style');
 }

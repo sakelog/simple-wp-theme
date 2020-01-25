@@ -1,6 +1,5 @@
+@import "./scss/myvariable.scss";
 @import "../node_modules/bulma/bulma.sass";
-@import "./mypagination.scss";
-
-h2 {
-  font-size: 1.2rem;
-}
+@import "./scss/base.scss";
+@import "./scss/mypagination.scss";
+@import "./scss/to_page_top.scss";
