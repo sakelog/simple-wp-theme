@@ -11,12 +11,10 @@
   
   if(is_search()) {
     $hit_num = $wp_query->found_posts;
-    if ( $hit_num > 0 ) {
-      $hit_num_str = '';
-      $hit_num_str = '該当件数：' . $hit_num . '件' ;
-      $search_tag = '<div><p>'. $hit_num_str . '</p></div>';
-      echo $search_tag;
-    }
+    $hit_num_str = '';
+    $hit_num_str = '該当件数：' . $hit_num . '件' ;
+    $search_tag = '<div><p>'. $hit_num_str . '</p></div>';
+    echo $search_tag;
   }
 
   $postTag = '';
@@ -32,14 +30,14 @@
       $category_name = get_category($post_cat) -> cat_name;
       $category_link = get_category_link($post_cat);
 
-      $postTag = '<div class="columns">';
-      $postTag .= '<div class="column">';
+      $postTag = '<div class="">';
       $postTag .= '<p>' . $post_date . '</p>';
+
       $postTag .= '<span><a href="' . $category_link . '"class="tag is-primary">' . $category_name . '</a></span>';
-    
+
       $postTag .= '<a href="' . $post_link . '"><h2 class="">' . $title . '</h2></a>';
       $postTag .= '<p>' . $post_content . '</p>';
-      $postTag .= '</div></div>';
+      $postTag .= '</div>';
 
       echo $postTag;
     }

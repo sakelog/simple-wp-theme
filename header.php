@@ -39,8 +39,8 @@
               ?>
             </div>
             <div class="navbar-end">
-              <div class="field">
-              <?php get_search_form(); ?>
+              <div class="navbar-item">
+                <?php get_search_form(); ?>
               </div>
             </div>
           </div>
