@@ -84,8 +84,8 @@ if (! function_exists('my_register_scripts')){
     if (! is_admin()) {
       wp_deregister_script( 'jquery' );
       wp_enqueue_script('jquery', 
-      get_template_directory_uri() . '/scripts/myjquery.min.js', 
-      array(), '3.4.1', true);
+      'https://cdn.jsdelivr.net/npm/jquery@3.4.1', 
+      array(), false, true);
     }
   }
   add_action( 'wp_enqueue_scripts', 'my_register_scripts' );

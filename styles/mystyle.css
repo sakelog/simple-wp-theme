@@ -7112,15 +7112,18 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-h2 {
-  font-size: 1.2rem; }
-
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
   .wrapper footer {
     margin-top: auto; }
+
+.post-list {
+  border-bottom: 1px dashed #cccccc;
+  margin: 1em 0; }
+  .post-list h2 {
+    font-size: 1.2em; }
 
 .pagination {
   display: flex;

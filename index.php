@@ -30,7 +30,7 @@
       $category_name = get_category($post_cat) -> cat_name;
       $category_link = get_category_link($post_cat);
 
-      $postTag = '<div class="">';
+      $postTag = '<div class="post-list">';
       $postTag .= '<p>' . $post_date . '</p>';
 
       $postTag .= '<span><a href="' . $category_link . '"class="tag is-primary">' . $category_name . '</a></span>';
