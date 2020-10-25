@@ -1,6 +1,6 @@
       </div>
     </section>
-    <footer class="footer has-text-centered">
+    <footer class="footer">
       <?php
         $startYear = 2020;
         $yearTag = "";
