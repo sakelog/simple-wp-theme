@@ -16,11 +16,9 @@
     "toTopPageM": "uglifyjs scripts/src/js/to_toppage.js -c -o scripts/dist/to_toppage.min.js"
   },
   "dependencies": {
-    "bulma": "^0.8.2",
     "modern-css-reset": "^1.1.1"
   },
   "devDependencies": {
-    "clean-css-cli": "^4.3.0",
     "node-sass": "^4.14.1"
   }
 }
