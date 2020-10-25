@@ -9,6 +9,7 @@
 @use './Layout/footer';
 
 // Object
+@use './Object/Component/form';
 @use './Object/Component/pagination';
 @use './Object/Component/prevnext';
 @use './Object/Component/tag';

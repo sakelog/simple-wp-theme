@@ -34,6 +34,9 @@
               ?>
             </div>
           </div>
+          <div class="navbar-menu">
+            <?php get_search_form(); ?>
+          </div>
         </nav>
       </header>
       <section class="section">

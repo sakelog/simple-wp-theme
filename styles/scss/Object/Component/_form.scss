@@ -1,0 +1,35 @@
+@use '../../Foundation/variables' as *;
+@use '../../Foundation/mixin' as *;
+
+form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form__item-wrapper {
+    margin: 2rem 1rem;
+
+    @include mq(lg) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .form__input {
+    border: 1px solid $gray;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1rem;
+    width: 100%;
+    &.search-field {
+      background: #ffffff;
+    }
+  }
+  .form__textarea {
+    border: 1px solid $gray;
+    background: #ffffff;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1rem;
+    width: 100%;
+  }
+}
