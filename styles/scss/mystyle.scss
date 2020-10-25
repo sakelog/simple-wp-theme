@@ -1,3 +1,10 @@
 // Foundation
 @use './Foundation/reset';
 @use './Foundation/base';
+
+// Layout
+@use './Layout/wrapper';
+@use './Layout/footer';
+
+// Object
+@use './Object/Project/toPageTop';
