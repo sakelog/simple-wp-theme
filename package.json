@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "scss": "node-sass ./styles/mystyle.scss ./styles/mystyle.css -w",
+    "sass-watch": "sass ./styles/scss/mystyle.scss ./styles/mystyle.min.css --style compressed --watch",
     "mincss": "cleancss -o ./styles/mystyle.min.css ./styles/mystyle.css",
     "navMenuC": "tsc scripts/src/ts/navmenu.ts --outDir scripts/src/js",
     "navMenuM": "uglifyjs scripts/src/js/navmenu.js -c -o scripts/dist/navmenu.min.js",
@@ -15,7 +16,8 @@
     "toTopPageM": "uglifyjs scripts/src/js/to_toppage.js -c -o scripts/dist/to_toppage.min.js"
   },
   "dependencies": {
-    "bulma": "^0.8.2"
+    "bulma": "^0.8.2",
+    "modern-css-reset": "^1.1.1"
   },
   "devDependencies": {
     "clean-css-cli": "^4.3.0",
