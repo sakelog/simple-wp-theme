@@ -1,0 +1,40 @@
+@use '../../Foundation/variables' as *;
+@use '../../Foundation/mixin' as *;
+
+.pagination {
+  ul.page-numbers {
+    display: flex;
+    justify-content: center;
+    li {
+      width: auto;
+      height: 3rem;
+      margin: auto 1rem;
+      a.page-numbers {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $primary;
+        border-radius: 100%;
+        text-decoration: none;
+        &.next,
+        &.prev {
+          width: auto;
+          border: none;
+          border-radius: 0;
+        }
+      }
+      span.page-numbers {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background: $primary;
+        color: #ffffff;
+      }
+    }
+  }
+}
