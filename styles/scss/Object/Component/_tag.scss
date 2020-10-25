@@ -1,0 +1,12 @@
+@use '../../Foundation/variables' as *;
+@use '../../Foundation/variables' as *;
+
+.tag {
+  background: $primary;
+  border-radius: 3rem;
+
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8em;
+  padding: 0.6rem 1rem;
+}

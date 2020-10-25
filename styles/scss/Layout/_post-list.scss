@@ -1,0 +1,11 @@
+@use '../Foundation/variables' as *;
+@use '../foundation/mixin' as *;
+
+.post-list {
+  border-bottom: 1px dashed $gray;
+
+  margin: 1em 0;
+  h2 {
+    font-size: 1.2em;
+  }
+}

@@ -2,7 +2,7 @@
 <?php
   $page_title = '';
   if ( is_front_page() ){
-    $page_title = get_bloginfo('name');
+    $page_title = get_bloginfo('name') . '：投稿一覧';
   }
   else { 
     $page_title = get_the_archive_title();

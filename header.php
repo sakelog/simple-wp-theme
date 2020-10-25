@@ -7,20 +7,15 @@
   <body>
     <div class="wrapper">
       <header>
-        <nav class="navbar is-primary">
-          <div class="navbar-brand">
+        <nav class="navbar">
+          <div class="navbar-logo">
             <?php
-              $siteTopLink = '<a href ="' . esc_url( home_url( '/' ) ) . '" class="navbar-item">';
+              $siteTopLink = '<a href ="' . esc_url( home_url( '/' ) ) . '">';
               $siteTopLink .= get_bloginfo('name');
               $siteTopLink .= '</a>';
 
               echo $siteTopLink;
             ?>
-            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
           </div>
 
           <div class="navbar-menu" id="navMenu">
@@ -37,11 +32,6 @@
                 wp_nav_menu($globalMenuSetting));
                 echo $globalNav;
               ?>
-            </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <?php get_search_form(); ?>
-              </div>
             </div>
           </div>
         </nav>

@@ -40,11 +40,11 @@
       
       if (is_single()){
         $prev_next_Tag = '<hr>';
-        $prev_next_Tag .= '<div class="columns">';
-        $prev_next_Tag .= '<div class="column">';
+        $prev_next_Tag .= '<div class="prevnext-link">';
+        $prev_next_Tag .= '<div class="util--has-text-left">';
         $prev_next_Tag .= get_previous_post_link('前： %link');
         $prev_next_Tag .= '</div>';
-        $prev_next_Tag .= '<div class="column has-text-right">';
+        $prev_next_Tag .= '<div class="util--has-text-right">';
         $prev_next_Tag .= get_next_post_link('%link ：次');
         $prev_next_Tag .= '</div>';
         $prev_next_Tag .= '</div>';
